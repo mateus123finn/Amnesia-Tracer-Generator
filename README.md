@@ -1,4 +1,4 @@
-# Amnesia Tracer Generetor - v0.4
+# Amnesia Tracer Generator - v0.4
 * Autor: Mateus Leal Sobreira
 
 ## Introdução
