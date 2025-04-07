@@ -50,7 +50,7 @@ MOV A 0[0] //Elemento que está no Endereço inicial e Offset 0
 MOV A B[2] //Elemento que está no Endereço de Base demarcado pelo valor no registrador B somado ao Ofsset 2.
 ```
 
-Como os dados estão dispostos em conjuntos de 4 Bytes, é necessário levar em consideração este fato para realizar cálculos para acesso á memória. Assim os dois métodos abaixo são similares.
+Como os dados estão dispostos em conjuntos de 4 Bytes, é necessário levar em consideração este fato para realizar cálculos para acesso à memória. Assim os dois métodos abaixo são similares.
 ```
 //Método 1:
 MOV A 0[2]
@@ -156,7 +156,7 @@ HLT
 #### PSH
 A instrução *PSH* tem a finalidade de inserir o valor de um registrador na Pilha (Stack). Este valor é armazenado entre as as instruções de [*GOF*](#gof---goto-if-flag), [*JMP*](#jmp), [*JMR*](#jmr---jump-and-return) e [*RET*](#ret).
 
-Os valores inseridos por esta instrução seguem ordem `FILA` (First In, Last Out).
+Os valores inseridos por esta instrução seguem ordem `FILO` (First In, Last Out).
 ```
 PSH A //Adiciona o valor de A na Pilha
 ```
@@ -164,7 +164,7 @@ PSH A //Adiciona o valor de A na Pilha
 #### POP
 A instrução *POP* tem a finalidade de remover um valor inserido anterioirmente do topo da Pilha (Stack) e insere em um registrador.
 
-Os valores removidos por esta instrução seguem ordem `FILA` (First In, Last Out).
+Os valores removidos por esta instrução seguem ordem `FILO` (First In, Last Out).
 ```
 POP A //Remove o valor na Pilha e insere em A
 ```
@@ -181,8 +181,11 @@ Os tipos de acesso que são utilizados pelo interpretador ao gerar o arquivo de 
 * `1` - Escrita na Memória
 * `2` - Leitura de Instrução
 
+## Exemplos
+Visando melhorar o entendimento da formatação dos arquivos de entrada e saída da aplicação, estão dispostos nas pastas `input` e `output`, respectivamente, algoritmos básicos implementados na linguagem KTT e o resultado do Tracer de execução gerado.
+
 ## Problemas Encontrados
-Nesta versão da aplicação os seguntes problemas foram encontrados:
+Nesta versão da aplicação, os seguintes problemas foram encontrados:
 * Arquivo Tracer é salvo sempre com nome de `Tracer.txt`
 * É necessário deixar uma linha em branco antes e depois do algoritmo em KTT.
 * Não há limite definido de Stack e Memória de Dados, sendo possível estas se sobreporem.
