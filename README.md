@@ -3,7 +3,7 @@
 
 ## Introdução
 
-A partir da construção de um Algoritmo na pseudo-linguagem *KTT*, gera um arquivo de Tracer de execução para ser utilizados no Simulador de Hierarquia de Memória Amnesia.
+A partir da construção de um Algoritmo na pseudo-linguagem *KTT*, gera um arquivo de Tracer de execução para ser utilizado no Simulador de Hierarquia de Memória Amnesia.
 
 ## Uso
 
